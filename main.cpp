@@ -2,13 +2,14 @@
 #include "task3/FloatArray.h"
 #include "task3/task3.h"
 #include "task4/task4.h"
+#include "task5/task5.h"
 
 int main() {
     int task;
     while (true) {
         std::cout << "Enter task number: ";
         //std::cin >> task;
-        task = 4;
+        task = 5;
         switch (task) {
             case 0:
                 std::cout << "Bye" << std::endl;
@@ -24,6 +25,10 @@ int main() {
 
             case 4:
                 task4();
+                break;
+
+            case 5:
+                task5();
                 break;
         }
 
