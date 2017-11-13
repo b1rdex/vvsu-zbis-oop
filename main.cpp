@@ -10,7 +10,7 @@ int main() {
     while (true) {
         std::cout << "Enter task number: ";
         std::cin >> task;
-        task = 6;
+//        task = 6;
         switch (task) {
             case 0:
                 std::cout << "Bye" << std::endl;
@@ -38,7 +38,7 @@ int main() {
         }
 
         // todo: remove
-        break;
+//        break;
     }
 
     return 0;
