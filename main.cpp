@@ -1,6 +1,6 @@
 #include <iostream>
 #include "task3/FloatArray.h"
-#include "task3.h"
+#include "task3/task3.h"
 
 int main() {
     int task;

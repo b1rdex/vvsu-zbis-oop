@@ -3,7 +3,7 @@
 //
 
 #include "task3.h"
-#include "task3/FloatArray.h"
+#include "FloatArray.h"
 
 void task3() {
     auto array = FloatArray(15);
