@@ -34,9 +34,9 @@ void FloatArray::removeItem(int position) {
         throw std::runtime_error("Out of range");
     }
 
-    auto *newItems = new float[size - 1];
+    auto *newItems = new float[size];
     int current = 0;
-    for (int i = 0; i < size - 1; i++) {
+    for (int i = 0; i < size; i++) {
         if (position == i) {
             continue;
         }
@@ -44,7 +44,6 @@ void FloatArray::removeItem(int position) {
     }
 
     items = newItems;
-    size -= 1;
     this->current -= 1;
 }
 
@@ -56,7 +55,7 @@ void FloatArray::info() {
 }
 
 void FloatArray::operator++(int) {
-    auto *newItems = new float[size - 1];
+    auto *newItems = new float[size];
     for (int i = 0; i < size; i++) {
         float item = items[i];
         newItems[i] = item + 1;

@@ -8,8 +8,8 @@ int main() {
     int task;
     while (true) {
         std::cout << "Enter task number: ";
-        //std::cin >> task;
-        task = 5;
+        std::cin >> task;
+//        task = 5;
         switch (task) {
             case 0:
                 std::cout << "Bye" << std::endl;
@@ -33,7 +33,7 @@ int main() {
         }
 
         // todo: remove
-        break;
+//        break;
     }
 
     return 0;
